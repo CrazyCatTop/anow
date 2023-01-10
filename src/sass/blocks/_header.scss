@@ -1,0 +1,41 @@
+.header {
+    height: 75px;
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    .container {
+        position: relative;
+    }
+    &__logo {
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 45px;
+        letter-spacing: 1.1px;
+        text-transform: lowercase;
+        position: absolute;
+        top: 6px;
+        left: -50px;
+        a {
+            color: #222222;
+        }
+    }
+    &__menu {
+        display: flex;
+        width: 650px;
+        padding-top: 16px;
+        margin: 0 auto;
+        justify-content: space-between;
+        font-size: 15px;
+        &-link {
+            transition: all 0.1s linear;
+            letter-spacing: 0.2px;
+            text-transform: lowercase;
+            &:hover {
+                color: $main-color;
+            }
+            &_active {
+                color: $main-color;
+            }
+        }
+    }
+}

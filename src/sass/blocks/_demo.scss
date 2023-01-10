@@ -1,0 +1,20 @@
+.demo {
+    height: 100vh;
+    background: url('/images/main_bg.png') center center/cover no-repeat;
+    &__title {
+        font-weight: 400;
+        font-size: 70px;
+        line-height: 85px;
+        color: #fff;
+        max-width: 632px;
+        text-align: center;
+        padding-top: 250px;
+        margin: 0 auto;
+    }
+    &__buttons {
+        margin: 40px auto 0 auto;
+        width: 332px;
+        display: flex;
+        justify-content: space-between;
+    }
+}

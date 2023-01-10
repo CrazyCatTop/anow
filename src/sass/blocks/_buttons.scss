@@ -1,0 +1,17 @@
+.button {
+    background-color: $main-color;
+    padding: 13px 38px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 30px;
+    border: 2px solid $main-color;
+    transition: all 0.33s;
+    &_no-bg {
+        background-color: unset;
+    }
+    &:hover {
+        background: rgba($color: #fff, $alpha: 0.2);
+        color: $main-color;
+    }
+}
