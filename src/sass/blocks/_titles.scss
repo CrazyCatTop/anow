@@ -2,12 +2,21 @@
     color: #333;
     &_14 {
         font-size: 14px;
+        color: $main-color;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        line-height: 15px;
     }
     &_18 {
         font-size: 18px;
+        font-weight: 400;
+        line-height: 28px;
+        color: #222;
     }
     &_24 {
         font-size: 24px;
+        font-weight: 400;
+        line-height: 38px;
     }
     &_32 {
         font-size: 32px;

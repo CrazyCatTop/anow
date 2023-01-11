@@ -14,10 +14,14 @@
     scroll-behavior: smooth;
 }
 
+::selection {
+    background-color: rgba($color: $main-color, $alpha: 0.33);
+}
+
 .container {
     width: 1170px;
-    margin: 0 auto;/* 
-    border: 1px solid #000; */
+    margin: 0 auto;
+    position: relative;
 }
 
 a {
@@ -33,3 +37,4 @@ a {
 @import 'blocks/buttons';
 @import 'blocks/header';
 @import 'blocks/demo';
+@import 'blocks/about';

@@ -1,0 +1,105 @@
+.about {
+    &__decorative-text {
+        position: absolute;
+        display: block;
+        top: -226px;
+        left: -120px;
+        color: #F7F7F7;
+        font-size: 150px;
+    }
+    &__top-block, &__bottom-block, .advantages {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__top-block {
+        margin-top: 226px;
+    }
+    &__title-block {
+        width: 480px;
+    }
+    &__subtitle {
+        margin-top: 10px;
+        max-width: 480px;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 54px;
+        color: #333333;
+    }
+    &__description {
+        max-width: 590px;
+    }
+    &__text {
+        margin-top: 11px;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 26px;
+        color: #999;
+    }
+    &__bottom-block {
+        margin-top: 85px;
+    }
+    &__photo {
+        width: 650px;
+        padding-left: 50px;
+    }
+    &__quote {
+        width: 425px;
+        padding: 68px 23px 0 15px;
+    }
+    &__quote-text {
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 45px;
+        color: #222;
+        i {
+            color: $main-color;
+        }
+    }
+    &__name {
+        margin-top: 93px;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 20px;
+        color: #222;
+    }
+    &__post {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 22px;
+        letter-spacing: 1.8px;
+        color: #CACACA;
+        margin-top: 20px;
+    }
+
+    .advantages {
+        margin-top: 171px;
+        &__item {
+            width: 380px;
+            text-align: center;
+            padding: 10px 21px 16px 21px;
+            position: relative;
+            @include before_circle;
+            z-index: 2;
+            &:nth-child(2) {
+                &::before {
+                    background-color: #3A0F73;
+                }
+            }
+            &:nth-child(3) {
+                &::before {
+                    background-color: #70B446;
+                }
+            }
+        }
+        &__icon {
+            margin: 0 auto 20px auto;
+        }   
+        &__description {
+            margin-top: 17px;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 26px;
+            color: #999999;
+        } 
+    }
+}
