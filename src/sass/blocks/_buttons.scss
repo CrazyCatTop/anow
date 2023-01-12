@@ -1,24 +1,27 @@
 .button {
     background-color: $main-color;
-    padding: 13px 38px;
+    padding: 11.5px 38px 13px 38px;
     color: #fff;
     font-weight: 700;
     font-size: 15px;
     line-height: 30px;
     border: 2px solid $main-color;
     transition: all 0.33s;
+    height: 56px;
     &_no-bg {
         background-color: unset;
     }
     &:hover {
-        background: rgba($color: #fff, $alpha: 0.2);
-        border: 2px solid #fff;
+        border: 2px solid $main-color;
+        background-color: #fff;
+        color: $main-color;
     }
     &:focus { 
         outline: none;
     }
     &:active {
         transition: all 0.1s;
-        background: rgba($color: #fff, $alpha: 0.1);
+        padding: 8.5px 35px 10px 35px;
+        border: 5px solid $main-color;
     }
 }

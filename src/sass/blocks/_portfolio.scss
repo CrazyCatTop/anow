@@ -1,0 +1,116 @@
+.portfolio {
+    &__decorative-line {
+        width: 1370px;
+        margin: 122px auto 0 auto;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        hr {
+            display: inline-block;
+            width: 605px;
+            height: 1px;
+            border: none;
+            background-color: #F5F5F5;
+        }
+        &::before {
+            position: absolute;
+            content: '';
+            top: -40.5px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 80px;
+            border-radius: 100%;
+            background-color: rgba($color: $main-color, $alpha: 0.2);
+        }
+    }
+    &__decorative-text {
+        top: 100px;
+        left: 700px;     
+        line-height: 180px;
+        @include decorative-text;
+        font-size: 200px;
+    }
+    &__top-block {
+        margin-top: 180px;
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+    }   
+    &__subtitle {
+        max-width: 312px;
+        margin-top: 2px;
+    }
+    &__form {
+        width: 1440px;
+        height: 720px;
+        margin: 165px auto 0 auto;
+        display: grid;
+        grid-template: repeat(2, 1fr) / repeat(4, 1fr);
+        grid-auto-rows: 1fr;
+    }
+    &__item {
+        padding: 194px 20px 40px 20px;
+        &:nth-child(1) {
+            background: url('/images/lastest_works/bag.png') center center/cover no-repeat;
+        }
+        &:nth-child(2) {
+            background: url('/images/lastest_works/bgc_image.png') center center/cover no-repeat;
+            grid-column: 2 / 4;
+            grid-row: 1 / 3;
+            padding-top: 554px;
+        }
+        &:nth-child(3) {
+            background: url('/images/lastest_works/graffiti.png') center center/cover no-repeat;
+        }
+        &:nth-child(4) {
+            background: url('/images/lastest_works/house.png') center center/cover no-repeat;
+        }
+        &:nth-child(5) {
+            background: url('/images/lastest_works/bag.png') center center/cover no-repeat;
+        }
+    }
+    &__rectangle {
+        background-color: rgba($color: #fff, $alpha: .85);
+        width: 100%;
+        height: 100%;
+        padding: 40px 35px 40px 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__name {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 33px;
+        color: #222222;
+        margin-bottom: 0;
+    }
+    &__checkbox {
+        width: 46px;
+        height: 46px;  
+        visibility: hidden; 
+        position: relative;    
+        &::before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            content: '';
+            width: 100%;
+            height: 100%;
+            border: 2px solid #222222;
+            border-radius: 0px;
+            background-color: #fff;
+            visibility: visible;
+            cursor: pointer;   
+        }       
+        &:checked {
+            &::before {  
+                background-image: url('/icons/other/check-mark.png');
+                background-position: center center;
+                background-size: 75%;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+}

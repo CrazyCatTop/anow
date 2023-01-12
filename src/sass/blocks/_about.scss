@@ -1,11 +1,8 @@
 .about {
     &__decorative-text {
-        position: absolute;
-        display: block;
         top: -226px;
         left: -120px;
-        color: #F7F7F7;
-        font-size: 150px;
+        @include decorative-text;
     }
     &__top-block, &__bottom-block, .advantages {
         display: flex;

@@ -12,3 +12,11 @@
         background-color: $main-color;
     }
 }
+
+@mixin decorative-text {
+    position: absolute;
+    color: #F7F7F7;
+    font-size: 150px;
+    user-select: none;
+    z-index: -100;
+}
