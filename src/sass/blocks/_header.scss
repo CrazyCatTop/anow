@@ -29,10 +29,16 @@
         justify-content: space-between;
         font-size: 15px;
         &-link {
-            transition: all 0.1s linear;
+            transition: all 0.169s;
             letter-spacing: 0.2px;
             text-transform: lowercase;
-            &:hover {
+            @include link-hover;
+            position: relative;
+            &:hover {       
+                &::before {
+                    width: 100%;
+                    background-color: $main-color;
+                }
                 color: $main-color;
             }
             &_active {

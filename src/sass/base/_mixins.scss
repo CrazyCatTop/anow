@@ -20,3 +20,16 @@
     user-select: none;
     z-index: -100;
 }
+
+@mixin link-hover {
+    &::before {
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 0;
+        transition: all 0.169s;
+        width: 0;
+        height: 2px;
+        background-color: #000;
+    }
+}
