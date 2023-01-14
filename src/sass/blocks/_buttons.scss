@@ -6,9 +6,9 @@
     font-size: 15px;
     line-height: 30px;
     border: 2px solid $main-color;
-    transition: all 0.33s;
+    transition: all 0.2s;
     height: 56px;
-    display: block;
+    display: inline-block;
     user-select: none;
     &_no-bg {
         background-color: unset;

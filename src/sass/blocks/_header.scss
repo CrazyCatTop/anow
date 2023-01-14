@@ -28,21 +28,29 @@
         margin: 0 auto;
         justify-content: space-between;
         font-size: 15px;
+        &:hover {
+            color: #222;   
+        }
         &-link {
             transition: all 0.169s;
             letter-spacing: 0.2px;
             text-transform: lowercase;
             @include link-hover;
             position: relative;
+            color: #222;
             &:hover {       
                 &::before {
                     width: 100%;
-                    background-color: $main-color;
                 }
-                color: $main-color;
             }
             &_active {
                 color: $main-color;
+                &:hover {
+                    color: $main-color;
+                    &::before {
+                        width: 0%;
+                    }
+                }
             }
         }
     }
