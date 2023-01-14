@@ -53,22 +53,22 @@
     &__item {
         padding: 194px 20px 40px 20px;
         &:nth-child(1) {
-            background: url('/images/lastest_works/bag.png') center center/cover no-repeat;
+            background: url('../images/lastest_works/bag.png') center center/cover no-repeat;
         }
         &:nth-child(2) {
-            background: url('/images/lastest_works/bgc_image.png') center center/cover no-repeat;
+            background: url('../images/lastest_works/bgc_image.png') center center/cover no-repeat;
             grid-column: 2 / 4;
             grid-row: 1 / 3;
             padding-top: 554px;
         }
         &:nth-child(3) {
-            background: url('/images/lastest_works/graffiti.png') center center/cover no-repeat;
+            background: url('../images/lastest_works/graffiti.png') center center/cover no-repeat;
         }
         &:nth-child(4) {
-            background: url('/images/lastest_works/house.png') center center/cover no-repeat;
+            background: url('../images/lastest_works/house.png') center center/cover no-repeat;
         }
         &:nth-child(5) {
-            background: url('/images/lastest_works/bag.png') center center/cover no-repeat;
+            background: url('../images/lastest_works/bag.png') center center/cover no-repeat;
         }
     }
     &__rectangle {

@@ -8,7 +8,7 @@
     border: 2px solid $main-color;
     transition: all 0.2s;
     height: 56px;
-    display: inline-block;
+    display: block;
     user-select: none;
     &_no-bg {
         background-color: unset;
