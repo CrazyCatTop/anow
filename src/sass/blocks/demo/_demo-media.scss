@@ -1,15 +1,44 @@
 @media (max-width: 1199.98px) {
-    
+    .demo {
+        &__title {
+            padding-top: 200px;
+        }
+    }
 }
 
 @media (max-width: 991.98px) {
-    
+    .demo {
+        &__title {
+            padding-top: 175px;
+        }
+    }
 }
 
 @media (max-width: 767.98px) {
-    
+    .demo {
+        &__title {
+            font-size: 55px;                
+            line-height: 75px;
+            padding-top: 200px;
+        }
+        &__buttons {
+            margin-top: 30px;
+        }
+    }
 }
 
 @media (max-width: 565.98px) {
-    
+    .demo {
+        &__title {
+            max-width: 300px;
+            font-size: 30px;
+            line-height: 40px;
+            padding-top: 200px;
+        }
+        &__buttons {
+            height: 120px;
+            width: 150px;
+            flex-direction: column;
+        }
+    }
 }

@@ -1,4 +1,16 @@
-const menu__links = document.querySelectorAll('.header__menu-link'),
+const hamburger = document.querySelector('.header__hamburger'),
+      menu = document.querySelector('.header__menu'),
+      close = document.querySelector('.header__close');
+
+hamburger.addEventListener('click', () => {
+    menu.classList.add('active');
+});
+
+close.addEventListener('click', () => {
+    menu.classList.remove('active');
+});
+
+const menu__links = document.querySelectorAll('.header__link'),
       h = document.documentElement, 
       b = document.body,
       st = 'scrollTop',
@@ -8,6 +20,12 @@ function setActive(i) {
     document.querySelector('.header__menu-link_active').classList.remove('header__menu-link_active');
     menu__links[i].classList.add('header__menu-link_active');
 } 
+
+menu__links.forEach((link) => {
+    link.addEventListener('click', () => {
+        menu.classList.remove('active');
+    });
+});
 
 /* menu__links.forEach((link) => {
     link.addEventListener('click', () => {
