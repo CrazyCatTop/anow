@@ -1,25 +1,5 @@
 @media (max-width: 1199.98px) {
-    .button {
-        background-color: $main-color;
-        padding: 7.5px 30px 9px 30px;
-        color: #fff;
-        font-weight: 700;
-        font-size: 15px;
-        line-height: 30px;
-        border: 2px solid $main-color;
-        transition: all 0.2s;
-        height: 48px;
-        display: block;
-        user-select: none;    
-        &_no-bg {
-            background-color: unset;
-        }
-        &:active {
-            transition: all 0.1s;
-            padding: 4.5px 27px 6px 27px;
-            border: 5px solid $main-color;
-        }
-    }
+    
 }
 
 @media (max-width: 991.98px) {
@@ -31,5 +11,16 @@
 }
 
 @media (max-width: 565.98px) {
-    
+    .button {
+        padding: 7.5px 30px 9px 30px;
+        height: 48px;
+        &_no-bg {
+            background-color: unset;
+        }
+        &:active {
+            transition: all 0.1s;
+            padding: 4.5px 27px 6px 27px;
+            border: 5px solid $main-color;
+        }
+    }
 }
