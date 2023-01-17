@@ -17,8 +17,8 @@ const menu__links = document.querySelectorAll('.header__link'),
       sh = 'scrollHeight';
 
 function setActive(i) {
-    document.querySelector('.header__menu-link_active').classList.remove('header__menu-link_active');
-    menu__links[i].classList.add('header__menu-link_active');
+    document.querySelector('.header__link_active').classList.remove('header__link_active');
+    menu__links[i].classList.add('header__link_active');
 } 
 
 menu__links.forEach((link) => {
