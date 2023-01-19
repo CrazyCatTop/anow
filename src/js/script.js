@@ -2,6 +2,22 @@ const hamburger = document.querySelector('.header__hamburger'),
       menu = document.querySelector('.header__menu'),
       close = document.querySelector('.header__close');
 
+let windowWidth = window.screen.width,
+    scaleWidth = 600;
+
+if (windowWidth < 1200) {
+
+}
+if (windowWidth < 992) {
+    scaleWidth = 340;
+}
+if (windowWidth < 768) {
+    scaleWidth = 540;
+}
+if (windowWidth < 576) {
+    scaleWidth = 300;
+}
+
 hamburger.addEventListener('click', () => {
     menu.classList.add('active');
 });
@@ -46,10 +62,10 @@ document.addEventListener('scroll', function() {
     if (percent > 28.5 && percent < 52) {
         setActive(2);
     }
-    if (percent > 52 && percent < 79.5) {
+    if (percent > 52 && percent < 80) {
         setActive(3);
     }
-    if (percent > 79.5 && percent < 91.5) {
+    if (percent > 80 && percent < 91.5) {
         setActive(4);
     }
     if (percent > 91.5 && percent < 98) {
@@ -67,5 +83,5 @@ const skills__values = document.querySelectorAll('.skills__value'),
 
 skills__values.forEach( (value, i) => {
     skills__scales[i].style.width = value.querySelector('span').innerHTML + '%';
-    document.querySelectorAll('.skills__head')[i].style.width = 600 * value.querySelector('span').innerHTML / 100 + 'px';
+    document.querySelectorAll('.skills__head')[i].style.width = scaleWidth * value.querySelector('span').innerHTML / 100 + 'px';
 });
