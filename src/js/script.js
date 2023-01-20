@@ -2,22 +2,6 @@ const hamburger = document.querySelector('.header__hamburger'),
       menu = document.querySelector('.header__menu'),
       close = document.querySelector('.header__close');
 
-let windowWidth = window.screen.width,
-    scaleWidth = 600;
-
-if (windowWidth < 1200) {
-
-}
-if (windowWidth < 992) {
-    scaleWidth = 340;
-}
-if (windowWidth < 768) {
-    scaleWidth = 540;
-}
-if (windowWidth < 576) {
-    scaleWidth = 300;
-}
-
 hamburger.addEventListener('click', () => {
     menu.classList.add('active');
 });
@@ -81,7 +65,30 @@ const skills__values = document.querySelectorAll('.skills__value'),
       skills__scales = document.querySelectorAll('.skills__scale'),
       skills__titles = document.querySelectorAll('.skills__head title');
 
-skills__values.forEach( (value, i) => {
-    skills__scales[i].style.width = value.querySelector('span').innerHTML + '%';
-    document.querySelectorAll('.skills__head')[i].style.width = scaleWidth * value.querySelector('span').innerHTML / 100 + 'px';
+let windowWidth, scaleWidth;
+
+skalesWidths();
+
+window.addEventListener('resize', () => {
+    skalesWidths();
 });
+
+function skalesWidths() {
+    windowWidth = window.screen.width;
+    if (windowWidth >= 992) {
+        scaleWidth = 600;
+    }
+    if (windowWidth < 992) {
+        scaleWidth = 340;
+    }
+    if (windowWidth < 768) {
+        scaleWidth = 540;
+    }
+    if (windowWidth < 576) {
+        scaleWidth = 300;
+    }
+    skills__values.forEach( (value, i) => {
+        skills__scales[i].style.width = value.querySelector('span').innerHTML + '%';
+        document.querySelectorAll('.skills__head')[i].style.width = scaleWidth * value.querySelector('span').innerHTML / 100 + 'px';
+    });
+}
