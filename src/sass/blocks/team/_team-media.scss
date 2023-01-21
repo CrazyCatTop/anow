@@ -126,7 +126,8 @@
             margin-top: 0;
         }
         &__wrapper {
-            margin-top: 20px;
+            width: 300px;
+            margin: 20px auto 0 auto;
             padding: 0;
             grid-template: repeat(6, 300px) / repeat(1, 300px);
             grid-auto-rows: 300px;            
