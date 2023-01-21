@@ -11,7 +11,9 @@
         justify-content: space-between;
     }
     &__item {
-        width: 360px;
+        width: 360px;        
+        min-height: 435px;
+        position: relative;
     }
     &__photo {
         display: block;
@@ -59,13 +61,14 @@
         color: #222222;
     }
     &__more {
+        position: absolute;
+        bottom: 0px;
         display: block;
         width: 82px;
         font-weight: 400;
         font-size: 15px;
         line-height: 21px;
         color: $main-color;
-        margin-top: 36px;
         transition: all 0.2s;
     }
 }

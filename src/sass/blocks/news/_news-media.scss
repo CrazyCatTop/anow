@@ -1,0 +1,100 @@
+@media (max-width: 1199.98px) {
+    .news {
+        margin-top: 100px;
+        margin-bottom: 80px;
+        &__subtitle {
+            margin-top: 30px;
+        }
+        &__wrapper {
+            margin-top: 20px;
+            padding: 0;
+        }
+        &__item {
+            width: 310px;
+            min-height: 360px;
+        }
+        &__hashtags {
+            margin-top: 20px;
+            line-height: 20px;
+        }
+        &__title {
+            margin-top: 15px;
+            font-size: 20px;
+            line-height: 25px;
+        }
+    }
+}
+
+@media (max-width: 991.98px) {
+    .news {
+        margin-top: 80px;
+        margin-bottom: 30px;
+        &__subtitle {
+            margin-top: 20px;
+        }
+        &__wrapper {
+            margin-top: 10px;
+            flex-wrap: wrap;
+        }
+        &__item {
+            width: 350px;
+            min-height: 400px;
+            margin-bottom: 40px;
+        }
+        &__hashtags {
+            margin-top: 26px;
+            line-height: 20px;
+        }
+        &__title {
+            margin-top: 10px;
+            font-size: 24px;
+            line-height: 33px;
+        }
+    }
+}
+
+@media (max-width: 767.98px) {
+    .news {
+        margin-top: 70px;
+        margin-bottom: 20px;
+        &__subtitle {
+            margin-top: 15px;
+        }
+        &__wrapper {
+            justify-content: center;
+        }
+        &__item {
+            width: 360px;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+@media (max-width: 565.98px) {
+    .news {
+        margin-top: 60px;
+        margin-bottom: 10px;
+        &__subtitle {
+            max-width: 300px;
+            margin: 5px auto 0 auto;
+        }
+        &__wrapper {
+            margin-top: 5px;
+            justify-content: center;
+        }
+        &__item {
+            width: 300px;
+            min-height: 330px;
+            margin-bottom: 30px;
+        }
+        &__hashtags {
+            margin-top: 10px;
+            line-height: 20px;
+        }
+        &__title {
+            margin-top: 10px;
+            font-size: 20px;
+            line-height: 26px;
+        }
+    }
+}
