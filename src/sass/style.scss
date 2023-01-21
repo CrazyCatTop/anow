@@ -41,6 +41,16 @@
     }
 }
 
+@media (max-width: 1199.98px) {
+    .anchor {
+        height: 55px;
+        margin-top: -55px;
+        &__portfolio {
+            top: 25px;
+        }
+    }
+}
+
 a {
     color: inherit;
     text-decoration: none;
