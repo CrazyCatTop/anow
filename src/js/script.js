@@ -1,13 +1,16 @@
 const hamburger = document.querySelector('.header__hamburger'),
       menu = document.querySelector('.header__menu'),
-      close = document.querySelector('.header__close');
+      close = document.querySelector('.header__close'),
+      overlay = document.querySelector('.header__overlay');
 
 hamburger.addEventListener('click', () => {
     menu.classList.add('active');
+    overlay.classList.add('active');
 });
 
 close.addEventListener('click', () => {
     menu.classList.remove('active');
+    overlay.classList.remove('active');
 });
 
 const menu__links = document.querySelectorAll('.header__link');
@@ -20,6 +23,7 @@ function setActive(i) {
 menu__links.forEach((link) => {
     link.addEventListener('click', () => {
         menu.classList.remove('active');
+        overlay.classList.remove('active');
     });
 });
 

@@ -92,6 +92,7 @@
         height: 46px;  
         visibility: hidden; 
         position: relative;    
+        -moz-appearance: initial;
         &::before {
             position: absolute;
             top: 0;

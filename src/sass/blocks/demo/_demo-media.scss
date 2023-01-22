@@ -9,7 +9,7 @@
 @media (max-width: 991.98px) {
     .demo {
         &__title {
-            padding-top: 175px;
+            padding-top: calc(25vh);
         }
     }
 }
@@ -19,7 +19,7 @@
         &__title {
             font-size: 55px;                
             line-height: 75px;
-            padding-top: 200px;
+            padding-top: calc(20vh);
         }
         &__buttons {
             margin-top: 30px;
