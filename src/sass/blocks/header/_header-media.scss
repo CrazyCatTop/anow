@@ -71,6 +71,10 @@
             width: 60%;
             padding: 150px 0 150px 120px;
         }
+        &__overlay {
+            width: 40vw;
+            right: -40vw;
+        }
     }
 }
 
@@ -79,6 +83,10 @@
         &__menu {
             width: 80%;
             padding: 150px 0 150px 60px;
+        }
+        &__overlay {
+            width: 20vw;
+            right: -20vw;
         }
     }
 }
